@@ -7,7 +7,7 @@ penguins_df = pd.read_csv('penguins.csv')
 features = penguins_df.select_dtypes(include=['number']).columns.tolist()
 features = [col for col in features if col not in ('year','rowid')]
 
-st.title("Palmer's Penguins")
+st.title("CHLOE'S Penguins")
 st.markdown("Use this Streamlit app to make your own scatterplot about penguins!")
 
 selected_x_var = st.selectbox(
